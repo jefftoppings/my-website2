@@ -7,20 +7,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatButtonModule, MatCardModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
 import { HomeComponent } from './home/home.component';
-import { MobileDetectionComponent } from './mobile-detection/mobile-detection.component';
+import { PaddingComponent } from './padding/padding.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
     HomeComponent,
-    MobileDetectionComponent,
+    PaddingComponent,
     ProjectsComponent,
     ExperienceComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<div class="main-container">
+  <mat-toolbar color="primary" class="example-toolbar">
+      <div class="links-container" *ngIf="!(isHandset$ | async)">
+        <button mat-button [routerLink]="'/home'">Home</button>
+        <button mat-button [routerLink]="'/projects'">Personal Projects</button>
+        <button mat-button [routerLink]="'/experience'">Work Experience</button>
+        <button mat-button [routerLink]="'/contact'">Contact</button>
+      </div>
+  </mat-toolbar>
+</div>

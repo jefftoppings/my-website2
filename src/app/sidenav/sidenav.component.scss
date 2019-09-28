@@ -24,15 +24,7 @@
     }
     .links-container {
       width: 97%;
-    }
-    .info-link {
-      color: white;
-      cursor: pointer;
-      text-decoration: none;
-      padding: 0 20px 0 20px;
-      font-size: 14px;
-
-      &:visited {
+      button {
         color: white;
       }
     }

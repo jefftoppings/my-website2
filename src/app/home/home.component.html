@@ -1,4 +1,4 @@
-<app-mobile-detection>
+<app-padding>
   <div class="main-container">
     <div class="picture-div"></div>
     <mat-card>
@@ -26,17 +26,8 @@
     <mat-card>
       <mat-card-title>Additional Information</mat-card-title>
       <mat-card-content>
-        <div *ngIf="!(isHandset$ | async)">
-          <span><a class="info-link" [routerLink]="'/projects'">Personal Projects</a></span>
-          <span><a class="info-link" [routerLink]="'/experience'">Work Experience</a></span>
-          <span><a class="info-link" [routerLink]="'/contact'">Contact Information</a></span>
-        </div>
-        <div *ngIf="isHandset$ | async">
-          <div><a class="info-link" [routerLink]="'/projects'">Personal Projects</a></div>
-          <div><a class="info-link" [routerLink]="'/experience'">Work Experience</a></div>
-          <div><a class="info-link" [routerLink]="'/contact'">Contact Information</a></div>
-        </div>
+        Please look at the other pages at the links in the menu
       </mat-card-content>
     </mat-card>
   </div>
-</app-mobile-detection>
+</app-padding>
