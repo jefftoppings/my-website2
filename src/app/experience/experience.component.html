@@ -1,1 +1,17 @@
-<p>experience works!</p>
+<app-mobile-detection>
+  <div class="main-container">
+    <h1 class="title">Work Experience</h1>
+    <mat-card *ngFor="let job of jobs">
+      <mat-card-title>{{job.title}}</mat-card-title>
+      <mat-card-subtitle>{{job.company}}</mat-card-subtitle>
+      <mat-card-content>
+        <div>{{job.summary}}</div>
+        <div>
+          <ul>
+            <li *ngFor="let item of job.duties">{{item}}</li>
+          </ul>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</app-mobile-detection>
