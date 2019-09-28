@@ -11,10 +11,10 @@
     </div>
   </mat-toolbar>
 
-  <mat-sidenav-container class="example-sidenav-container">
+  <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #sidenav>
       <mat-nav-list>
-        <a mat-list-item *ngFor="let item of menuItems" routerLink="{{item.route}}">{{item.text}}</a>
+        <a mat-list-item *ngFor="let item of menuItems" routerLink="{{item.route}}" (click)="sidenav.close()">{{item.text}}</a>
       </mat-nav-list>
     </mat-sidenav>
 

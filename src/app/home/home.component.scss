@@ -35,5 +35,10 @@
     cursor: pointer;
     text-decoration: none;
     margin: 20px;
+    color: blue;
+
+    &visited {
+      color: blue;
+    }
   }
 }
