@@ -15,6 +15,10 @@
     margin: 10px;
   }
 
+  .about {
+    line-height: 2;
+  }
+
   .skills {
     display: flex;
     .skills-div {
@@ -25,5 +29,11 @@
         font-size: 16px;
       }
     }
+  }
+
+  .info-link {
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px;
   }
 }

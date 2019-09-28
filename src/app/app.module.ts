@@ -8,13 +8,19 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatButtonModule, MatCardModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
 import { HomeComponent } from './home/home.component';
 import { MobileDetectionComponent } from './mobile-detection/mobile-detection.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
     HomeComponent,
-    MobileDetectionComponent
+    MobileDetectionComponent,
+    ProjectsComponent,
+    ExperienceComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,7 @@
     <div class="picture-div"></div>
     <mat-card>
       <mat-card-title>About Me</mat-card-title>
-      <mat-card-content>
+      <mat-card-content class="about">
         I am currently working as a Software Developer on an internship at Vendasta Technologies in Saskatoon, SK. I have one
         semester of school remaining to complete a Bachelor of Science in Computer Science. Before starting computer science
         in 2017, I completed a degree in Chemical Engineering and worked in various engineering roles. During these jobs, I
@@ -20,6 +20,21 @@
         <div class="skills-div">
           <mat-card-subtitle>Proficient</mat-card-subtitle>
           <div class="skill-item" *ngFor="let skill of proficientSkills">{{skill}}</div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card>
+      <mat-card-title>Additional Information</mat-card-title>
+      <mat-card-content>
+        <div *ngIf="!(isHandset$ | async)">
+          <span><a class="info-link" [routerLink]="'/projects'">Personal Projects</a></span>
+          <span><a class="info-link" [routerLink]="'/experience'">Work Experience</a></span>
+          <span><a class="info-link" [routerLink]="'/contact'">Contact Information</a></span>
+        </div>
+        <div *ngIf="isHandset$ | async">
+          <div><a class="info-link" [routerLink]="'/projects'">Personal Projects</a></div>
+          <div><a class="info-link" [routerLink]="'/experience'">Work Experience</a></div>
+          <div><a class="info-link" [routerLink]="'/contact'">Contact Information</a></div>
         </div>
       </mat-card-content>
     </mat-card>
