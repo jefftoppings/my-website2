@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  experiencedSkills: string[] = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Angular', 'RxJs', 'Python', 'Java',
+    'Git Version Control'];
+  proficientSkills: string[] = ['GoLang', 'Haskell', 'Google Cloud Platform', 'SQL', 'KnockoutJs', 'Android'];
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

@@ -15,6 +15,7 @@ export class SidenavComponent implements OnInit {
   menuItems: MenuItem[] = [
     {text: 'Home', route: '/'},
     {text: 'Projects', route: '/projects'},
+    {text: 'Work Experience', route: '/experience'},
     {text: 'Contact', route: '/contact'}
     ];
 

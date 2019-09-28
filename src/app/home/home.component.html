@@ -10,5 +10,18 @@
         had an opportunity to develop simple software, which inspired me to pursue a career in technology.
       </mat-card-content>
     </mat-card>
+    <mat-card>
+      <mat-card-title>Skills</mat-card-title>
+      <mat-card-content class="skills">
+        <div class="skills-div">
+          <mat-card-subtitle>Experienced</mat-card-subtitle>
+          <div class="skill-item" *ngFor="let skill of experiencedSkills">{{skill}}</div>
+        </div>
+        <div class="skills-div">
+          <mat-card-subtitle>Proficient</mat-card-subtitle>
+          <div class="skill-item" *ngFor="let skill of proficientSkills">{{skill}}</div>
+        </div>
+      </mat-card-content>
+    </mat-card>
   </div>
 </app-mobile-detection>
