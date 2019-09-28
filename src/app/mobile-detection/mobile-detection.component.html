@@ -1,0 +1,3 @@
+<div [class.desktop]="!(isHandset$ | async)" [class.mobile]="isHandset$ | async">
+  <ng-content></ng-content>
+</div>

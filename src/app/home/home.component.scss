@@ -1,0 +1,13 @@
+.main-container {
+  text-align: center;
+
+  .picture-div {
+    border-radius: 50%;
+    background-image: url("../../assets/jeff.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+  }
+}
