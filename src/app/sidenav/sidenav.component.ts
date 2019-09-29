@@ -13,7 +13,7 @@ interface MenuItem {
 export class SidenavComponent implements OnInit {
 
   menuItems: MenuItem[] = [
-    {text: 'Home', route: '/'},
+    {text: 'Home', route: '/home'},
     {text: 'Projects', route: '/projects'},
     {text: 'Work Experience', route: '/experience'},
     {text: 'Contact', route: '/contact'}
